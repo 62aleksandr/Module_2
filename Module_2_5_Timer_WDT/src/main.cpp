@@ -9,7 +9,7 @@ void setup()
   Serial.begin(115200);
   delay(1000);
 
-  // Ініціалізація WDT з таймаутом 2 секунди
+  // Ініціалізація WDT, true-panic/reset,false - повідомлення в серіал
   esp_task_wdt_init(WDT_TIMEOUT_S, true);
 
   // Додавання поточної задачі під контроль WDT

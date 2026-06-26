@@ -15,9 +15,9 @@ void handleRoot()
   html += "<style>body{text-align:center; font-family:sans-serif; margin-top:50px;} ";
   html += ".btn{display:inline-block; padding:15px 30px; font-size:24px; color:white; text-decoration:none; margin:10px; border-radius:5px;} ";
   html += ".on{background-color:green;} .off{background-color:red;}</style></head><body>";
-  html += "<h2>Управление реле ESP32-S3</h2>";
-  html += "<a href='/on' class='btn on'>ВКЛЮЧИТЬ</a>";
-  html += "<a href='/off' class='btn off'>ВЫКЛЮЧИТЬ</a>";
+  html += "<h2>Керування реле ESP32-S3</h2>";
+  html += "<a href='/on' class='btn on'>ВКЛЮЧИТИ</a>";
+  html += "<a href='/off' class='btn off'>ВИКЛЮЧИТИ</a>";
   html += "</body></html>";
   server.send(200, "text/html", html);
 }
